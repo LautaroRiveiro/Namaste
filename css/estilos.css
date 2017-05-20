@@ -1,4 +1,4 @@
-/*--- RESET --- */
+/*=========== RESET =========== */
 html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, form, fieldset, blockquote {
   padding: 0;
   margin: 0;
@@ -15,5 +15,19 @@ td, th, caption {
 
 img, fieldset {
   border: 0; }
+
+/*=========== INICIO =========== */
+.inicio {
+  height: 100vh;
+  background: url(../images/bg-sd.jpg) no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-box-shadow: inset 0px 0px 0px 100vw rgba(255, 0, 0, 0.2);
+  -moz-box-shadow: inset 0px 0px 0px 100vw rgba(255, 0, 0, 0.2);
+  box-shadow: inset 0px 0px 0px 100vw rgba(255, 0, 0, 0.2); }
+  .inicio .container .d-flex {
+    min-height: 100vh; }
 
 /*# sourceMappingURL=estilos.css.map */

@@ -15,3 +15,4 @@ Commits
 | 04. | Imágenes base
 | 05. | Maquetación base
 | 06. | Navbar
+| 07. | Section Inicio
