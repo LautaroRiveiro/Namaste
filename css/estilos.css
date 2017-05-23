@@ -27,7 +27,19 @@ img, fieldset {
   -webkit-box-shadow: inset 0px 0px 0px 100vw rgba(255, 0, 0, 0.2);
   -moz-box-shadow: inset 0px 0px 0px 100vw rgba(255, 0, 0, 0.2);
   box-shadow: inset 0px 0px 0px 100vw rgba(255, 0, 0, 0.2); }
-  .inicio .container .d-flex {
-    min-height: 100vh; }
+
+.texto-inicio {
+  color: white;
+  text-shadow: 0px 0px 12px #666000; }
+
+/*=========== SERVICIOS =========== */
+.item {
+  height: 20vh;
+  display: flex;
+  flex-direction: column; }
+
+.item-hijo {
+  flex: 1 0 0px;
+  vertical-align: middle; }
 
 /*# sourceMappingURL=estilos.css.map */
