@@ -32,6 +32,11 @@ img, fieldset {
   color: white;
   text-shadow: 0px 0px 12px #666000; }
 
+/*=========== BIENVENIDOS =========== */
+.bienvenidos {
+  min-height: 30vh;
+  background: yellow; }
+
 /*=========== FOTO 1 =========== */
 .foto-1 {
   min-height: 35vh;
