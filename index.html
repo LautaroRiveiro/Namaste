@@ -8,15 +8,16 @@
     <link rel="stylesheet" href="css/estilos.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="css/font-awesome.min.css">
-   </head>
+
+  </head>
   <body>
     
 	<!-- Inicio -->
     <section class="inicio">
         <div class="h-100 container d-flex flex-column justify-content-between align-items-center">
-                <div class="menu">
+                <div>
                     <!-- Navbar -->
-                    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top">
+                    <nav id="menu" class="navbar navbar-toggleable-md bg-inverse navbar-inverse fixed-top navbar-transparente">
                         <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
@@ -29,7 +30,7 @@
                                     <a class="nav-link" href="#">Inicio<span class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item px-md-2">
-                                    <a class="nav-link" href="#">Servicios</a>
+                                    <a data-scroll href="#bienvenidos"  class="nav-link" >Servicios</a>
                                 </li>
                                 <li class="nav-item px-md-2">
                                     <a class="nav-link" href="#">Cabañas</a>
@@ -41,15 +42,15 @@
 
             	<div class="text-center texto-inicio">
     	    		<h1 class="pt-3 mt-5 display-3">NAMASTÉ</h1>
-    	    		<p class="display-6">PLACER. <strong>CONFORT.</strong> RELAX</p>
+    	    		<p class="h5">PLACER. <strong>CONFORT.</strong> RELAX</p>
             	</div>
 
-                <a class="pb-3"><br><i class="fa fa-chevron-down fa-2x texto-inicio" aria-hidden="true"></i></a>
+                <a class="pb-3 flecha-bajar" data-scroll href="#bienvenidos"><br><i class="fa fa-chevron-down fa-2x texto-inicio" aria-hidden="true"></i></a>
         </div>
     </section>
 
 	<!-- Bienvenidos -->
-    <section class="bienvenidos jumbotron jumbotron-fluid mb-0">
+    <section id="bienvenidos" class="jumbotron jumbotron-fluid mb-0">
     	<div class="container py-5">
             <h2 class="h2 text-center"><strong>BIENVENIDOS</strong></h2>
             <p class="pt-4 text-justify">Nuestro complejo se encuentra en la histórica, tradicional y bonita ciudad de San Pedro.</p>
@@ -303,7 +304,10 @@
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="bower_components/jquery/dist/jquery.slim.min.js"></script>
+    <script src="js/smooth-scroll.min.js"></script>
+    <script src="js/script.js"></script>
     <script src="bower_components/tether/dist/js/tether.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
   </body>
 </html>

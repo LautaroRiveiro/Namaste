@@ -6641,8 +6641,13 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   .hidden-print {
     display: none !important; } }
 
-/*=========== RESET =========== */
 /*=========== INICIO =========== */
+#menu {
+  transition: background-color 0.7s ease 0s; }
+
+.navbar-transparente {
+  background-color: rgba(0, 0, 0, 0.5) !important; }
+
 .inicio {
   height: 100vh;
   background: url(../images/bg-sd.jpg) no-repeat fixed;
@@ -6658,6 +6663,31 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   color: white;
   text-shadow: 0px 0px 12px #666000; }
 
+.flecha-bajar {
+  display: inline-block;
+  -webkit-animation: flecha-animada 2s ease-in-out infinite;
+  animation: flecha-animada 2s ease-in-out infinite; }
+
+@-webkit-keyframes flecha-animada {
+  from {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  50% {
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px); }
+  to {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); } }
+@keyframes flecha-animada {
+  from {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  50% {
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px); }
+  to {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); } }
 /*=========== BIENVENIDOS =========== */
 /*=========== FOTO 1 =========== */
 .foto-1 {
@@ -6720,12 +6750,9 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 
 @media (min-width: 576px) {
   html {
-    font-size: 14px; } }
+    font-size: 16px; } }
 @media (min-width: 768px) {
   html {
-    font-size: 15px; } }
-@media (min-width: 992px) {
-  html {
-    font-size: 16px; } }
+    font-size: 17px; } }
 
 /*# sourceMappingURL=estilos.css.map */
