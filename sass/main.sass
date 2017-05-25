@@ -1,21 +1,22 @@
+@import "bootstrap"
 /*=========== RESET ===========*/
 
-html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, form, fieldset, blockquote
-	padding: 0
-	margin: 0
-	font-size: 100%
-	font-weight: normal
+// html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, form, fieldset, blockquote
+// 	padding: 0
+// 	margin: 0
+// 	font-size: 100%
+// 	font-weight: normal
 
-table
-	border-collapse: collapse
-	border-spacing: 0
+// table
+// 	border-collapse: collapse
+// 	border-spacing: 0
 
-td, th, caption
-	font-weight: normal
-	text-align: left
+// td, th, caption
+// 	font-weight: normal
+// 	text-align: left
 
-img, fieldset
-	border: 0
+// img, fieldset
+// 	border: 0
 
 
 /*=========== INICIO ===========*/
@@ -42,24 +43,39 @@ img, fieldset
 
 /*=========== BIENVENIDOS ===========*/
 
-.bienvenidos
-
 
 /*=========== FOTO 1 ===========*/
 
 .foto-1
-	min-height: 45vh
+	min-height: 50vh
 	background: url(../images/foto1-sd.jpg) center
 	-webkit-background-size: cover
 	-moz-background-size: cover
 	-o-background-size: cover
 	background-size: cover
 
+/*=========== CARACTERISTICAS ===========*/
+
+.caracteristicas
+	background-color: purple
+	div ul
+		border: 0 !important
+	div ul li a
+		color: black
+	div ul li a.active
+		color: green !important
+		background-color: pink !important
+	div div
+		background-color: pink !important
+		border: 0 !important
+
+.nav-link.active
+	background-color: red
 
 /*=========== FOTO 2 ===========*/
 
 .foto-2
-	min-height: 45vh
+	min-height: 50vh
 	background: url(../images/foto2-sd.jpg) center
 	-webkit-background-size: cover
 	-moz-background-size: cover
@@ -79,6 +95,10 @@ img, fieldset
 	flex: 1 0 0px
 	vertical-align: middle
 
+/*=========== CAROUSEL ===========*/
+
+
+/*=========== FOOTER ===========*/
 
 .borde
 	border: 2px solid black
@@ -86,9 +106,23 @@ img, fieldset
 .borde2
 	border: 2px solid blue
 
-.prueba
-	border-right: 1px blue solid
+.borde-derecho
+	border-right: 1px #333 solid
 
-.textoo
+.contacto
 	font-size: 0.7rem
 
+
+
+
+@include media-breakpoint-up(sm)
+	html
+		font-size: 14px
+
+@include media-breakpoint-up(md)
+	html
+		font-size: 15px
+
+@include media-breakpoint-up(lg)
+	html
+		font-size: 16px
