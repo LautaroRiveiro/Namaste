@@ -6725,6 +6725,9 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
     -webkit-transform: translateY(0);
     transform: translateY(0); } }
 /*=========== BIENVENIDOS =========== */
+#bienvenidos div p {
+  letter-spacing: 0.08rem; }
+
 /*=========== FOTO 1 =========== */
 .foto-1 {
   min-height: 50vh;
@@ -6750,7 +6753,11 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   border: none !important; }
 
 .card-block {
-  min-height: 25vh; }
+  min-height: 30vh; }
+
+.btn-servicios {
+  border-radius: 12rem;
+  font-size: 1.3rem; }
 
 /*=========== FOTO 2 =========== */
 .foto-2 {
@@ -6763,7 +6770,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 
 /*=========== SERVICIOS =========== */
 .item {
-  height: 20vh;
+  height: 7rem;
   display: flex;
   flex-direction: column; }
 
@@ -6778,6 +6785,8 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 .galeria {
   border: 2px solid #292b2c; }
 
+@media (max-width: 767px) {
+  max-height: 35vh; }
 /*=========== FOOTER =========== */
 .footer-social-media a {
   color: inherit; }

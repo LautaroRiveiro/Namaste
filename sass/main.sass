@@ -73,7 +73,9 @@
 
 
 /*=========== BIENVENIDOS ===========*/
-
+#bienvenidos
+	div p
+		letter-spacing: 0.08rem
 
 /*=========== FOTO 1 ===========*/
 
@@ -103,7 +105,11 @@
 		border: none !important
 
 .card-block
-	min-height: 25vh
+	min-height: 30vh
+
+.btn-servicios
+	border-radius: 12rem
+	font-size: 1.3rem
 
 /*=========== FOTO 2 ===========*/
 
@@ -119,7 +125,7 @@
 /*=========== SERVICIOS ===========*/
 
 .item
-	height: 20vh
+	height: 7rem
 	display: flex
 	flex-direction: column
 
@@ -133,6 +139,9 @@
 /*=========== CAROUSEL ===========*/
 .galeria
 	border: 2px solid rgb(41, 43, 44)
+
+@include media-breakpoint-down(sm)
+	max-height: 35vh
 
 /*=========== FOOTER ===========*/
 .footer-social-media
