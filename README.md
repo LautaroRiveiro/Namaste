@@ -16,3 +16,11 @@ Commits
 | 05. | Maquetación base
 | 06. | Navbar
 | 07. | Section Inicio
+| 08. | Section Servicios
+| 09. | Section Foto
+| 10. | Section Características
+| 11. | Section Carousel
+| 12. | Footer
+| 13. | Arreglos
+| 14. | Script.js - Efectos Inicio
+| 15. | Mejoras y Arreglos
