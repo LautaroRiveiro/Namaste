@@ -25,3 +25,4 @@ Commits
 | 14. | Script.js - Efectos Inicio
 | 15. | Mejoras y Arreglos
 | 16. | Prueba detalles
+| 17. | Prueba detalles
