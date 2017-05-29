@@ -6781,14 +6781,6 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   border-radius: 12rem;
   font-size: 1.3rem; }
 
-/*=========== CAROUSEL =========== */
-.galeria {
-  border: 2px solid #292b2c; }
-
-@media (max-width: 767px) {
-  max-height: 30vh;
-  object-fit: cover;
-  width: 100%; }
 /*=========== FOOTER =========== */
 .footer-social-media a {
   color: inherit; }
