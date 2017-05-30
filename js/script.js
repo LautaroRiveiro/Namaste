@@ -57,7 +57,6 @@ $(document).ready(function() {
         after: function (anchor, toggle) {} // Function to run after scrolling completes
     });
 
-
     //--- Configuracion de la flecha para volver al inicio
     $('.ir-arriba').click(function(){
         $('body, html').animate({

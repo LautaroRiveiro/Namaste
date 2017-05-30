@@ -6681,6 +6681,12 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 .navbar-transparente {
   background-color: rgba(0, 0, 0, 0.5) !important; }
 
+.navbar-brand {
+  font-family: "Krona One", sans-serif !important; }
+
+.navbar-collapse {
+  font-size: 0.8rem; }
+
 .inicio {
   height: 100vh;
   background: url(../images/bg-sd.jpg) no-repeat fixed;
@@ -6724,6 +6730,21 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   to {
     -webkit-transform: translateY(0);
     transform: translateY(0); } }
+@media (min-width: 768px) {
+  .inicio {
+    background: url(../images/bg-desktop.jpg) no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+    .inicio .navbar-transparente {
+      background-color: transparent !important; }
+    .inicio .nav-item:hover {
+      background-color: rgba(255, 90, 90, 0.5);
+      transition: background-color 0.5s ease 0s;
+      border-radius: 12rem;
+      color: brown !important;
+      z-index: 1000; } }
 /*=========== BIENVENIDOS =========== */
 #bienvenidos div p {
   letter-spacing: 0.08rem; }
@@ -6737,6 +6758,14 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   -o-background-size: cover;
   background-size: cover; }
 
+@media (min-width: 768px) {
+  .foto-1 {
+    min-height: 60vh;
+    background: url(../images/foto1-desktop.jpg) center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; } }
 /*=========== CARACTERISTICAS =========== */
 .caracteristicas div ul {
   border: 0 !important; }
@@ -6752,9 +6781,22 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 .caracteristicas div div {
   border: none !important; }
 
+.caracteristicas-desktop {
+  display: none; }
+
 .card-block {
   min-height: 30vh; }
 
+@media (min-width: 768px) {
+  .caracteristicas {
+    display: none; }
+
+  .caracteristicas-desktop {
+    display: block;
+    font-size: 0.6rem !important; }
+
+  .card-block {
+    min-height: 20vh; } }
 /*=========== FOTO 2 =========== */
 .foto-2 {
   min-height: 50vh;
@@ -6764,6 +6806,14 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   -o-background-size: cover;
   background-size: cover; }
 
+@media (min-width: 768px) {
+  .foto-2 {
+    min-height: 60vh;
+    background: url(../images/foto2-desktop.jpg) center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; } }
 /*=========== SERVICIOS =========== */
 .item {
   height: 7rem;
@@ -6778,9 +6828,15 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
     color: #502E1D; }
 
 .btn-servicios {
-  border-radius: 12rem;
+  border-radius: 0.3rem;
   font-size: 1.3rem; }
 
+.btn-servicios:hover {
+  cursor: pointer; }
+
+@media (min-width: 768px) {
+  .y-mas {
+    display: none; } }
 /*=========== FOOTER =========== */
 .footer-social-media a {
   color: inherit; }
@@ -6800,17 +6856,19 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 .contacto {
   font-size: 0.7rem; }
 
-.borde2 {
-  border: 2px solid blue; }
-
 .borde-derecho {
   border-right: 1px #333 solid; }
 
-@media (min-width: 576px) {
-  html {
-    font-size: 16px; } }
 @media (min-width: 768px) {
-  html {
-    font-size: 17px; } }
+  footer {
+    padding: 0px; }
+    footer #facebook, footer #instagram {
+      font-size: 2rem; }
+    footer #footer-brand h4 {
+      font-size: 1rem;
+      text-transform: lowercase !important; }
+    footer .borde-derecho {
+      border-left: 1px #333 solid; } }
+/*=========== FONT SIZE =========== */
 
 /*# sourceMappingURL=estilos.css.map */

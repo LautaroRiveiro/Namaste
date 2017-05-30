@@ -22,6 +22,12 @@
 .navbar-transparente
 	background-color: rgba(0,0,0,0.5) !important
 
+.navbar-brand
+	font-family: 'Krona One', sans-serif !important
+
+.navbar-collapse
+	font-size: 0.8rem
+
 .inicio
 	height: 100vh
 
@@ -72,6 +78,24 @@
 		transform: translateY(0)
 
 
+@include media-breakpoint-up(md)
+	.inicio
+		background: url(../images/bg-desktop.jpg) no-repeat fixed
+		-webkit-background-size: cover
+		-moz-background-size: cover
+		-o-background-size: cover
+		background-size: cover
+	
+		.navbar-transparente
+			background-color: rgba(0,0,0,0) !important
+		.nav-item:hover
+			background-color: rgba(900,90,90,0.5)
+			transition: background-color 0.5s ease 0s
+			border-radius: 12rem
+			color: brown !important
+			z-index: 1000
+
+
 /*=========== BIENVENIDOS ===========*/
 #bienvenidos
 	div p
@@ -86,6 +110,15 @@
 	-moz-background-size: cover
 	-o-background-size: cover
 	background-size: cover
+
+@include media-breakpoint-up(md)
+	.foto-1
+		min-height: 60vh
+		background: url(../images/foto1-desktop.jpg) center
+		-webkit-background-size: cover
+		-moz-background-size: cover
+		-o-background-size: cover
+		background-size: cover
 
 /*=========== CARACTERISTICAS ===========*/
 
@@ -104,8 +137,20 @@
 	div div
 		border: none !important
 
+.caracteristicas-desktop
+	display: none
+
 .card-block
 	min-height: 30vh
+
+@include media-breakpoint-up(md)
+	.caracteristicas
+		display: none
+	.caracteristicas-desktop
+		display: block
+		font-size: 0.6rem !important
+	.card-block
+		min-height: 20vh
 
 /*=========== FOTO 2 ===========*/
 
@@ -117,6 +162,14 @@
 	-o-background-size: cover
 	background-size: cover
 
+@include media-breakpoint-up(md)
+	.foto-2
+		min-height: 60vh
+		background: url(../images/foto2-desktop.jpg) center
+		-webkit-background-size: cover
+		-moz-background-size: cover
+		-o-background-size: cover
+		background-size: cover
 
 /*=========== SERVICIOS ===========*/
 
@@ -133,9 +186,15 @@
 		color: $color-fondo-secundario
 
 .btn-servicios
-	border-radius: 12rem
+	border-radius: 0.3rem
 	font-size: 1.3rem
 
+.btn-servicios:hover
+	cursor: pointer
+
+@include media-breakpoint-up(md)
+	.y-mas
+		display: none
 
 /*=========== FOOTER ===========*/
 .footer-social-media
@@ -155,20 +214,17 @@
 .contacto
 	font-size: 0.7rem
 
-
-.borde2
-	border: 2px solid blue
-
 .borde-derecho
 	border-right: 1px #333 solid
 
-
-
-
-@include media-breakpoint-up(sm)
-	html
-		font-size: 16px
-
 @include media-breakpoint-up(md)
-	html
-		font-size: 17px
+	footer
+		padding: 0px
+		#facebook, #instagram
+			font-size: 2rem
+		#footer-brand h4
+			font-size: 1rem
+			text-transform: lowercase !important
+		.borde-derecho
+			border-left: 1px #333 solid
+/*=========== FONT SIZE ===========*/
