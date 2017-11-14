@@ -6676,10 +6676,19 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 
 /*=========== INICIO =========== */
 #barra-menu {
-  transition: background-color 0.7s ease 0s; }
+  transition: background-color 0.8s ease 0s; }
+
+.navbar-toggler-icon {
+  color: #00685b !important;
+  background-color: #00685b !important;
+  border-radius: 8px; }
 
 .navbar-transparente {
-  background-color: rgba(0, 0, 0, 0.5) !important; }
+  background-color: white !important; }
+  .navbar-transparente a, .navbar-transparente button span {
+    color: #00685b !important; }
+  .navbar-transparente div ul li {
+    color: #00685b !important; }
 
 .navbar-brand {
   font-family: "Krona One", sans-serif !important; }
@@ -6687,23 +6696,8 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 .navbar-collapse {
   font-size: 0.8rem; }
 
-.inicio {
-  height: 100vh;
-  background: url(../images/bg-sd.jpg) no-repeat fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  -webkit-box-shadow: inset 0px 0px 0px 100vw rgba(255, 0, 0, 0.2);
-  -moz-box-shadow: inset 0px 0px 0px 100vw rgba(255, 0, 0, 0.2);
-  box-shadow: inset 0px 0px 0px 100vw rgba(255, 0, 0, 0.2); }
-
-.texto-inicio {
-  color: #FEFFE6;
-  text-shadow: 0px 0px 10px #444000; }
-  .texto-inicio .texto-inicio-namaste {
-    font-family: "Krona One", sans-serif !important;
-    font-size: 3rem !important; }
+.servicios-inicio {
+  color: #00685b; }
 
 .flecha-bajar {
   display: inline-block;
@@ -6731,23 +6725,20 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
     -webkit-transform: translateY(0);
     transform: translateY(0); } }
 @media (min-width: 768px) {
-  .inicio {
-    background: url(../images/bg-desktop.jpg) no-repeat fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; }
-    .inicio .navbar-transparente {
-      background-color: transparent !important; }
-    .inicio .nav-item:hover {
-      background-color: rgba(255, 90, 90, 0.5);
-      transition: background-color 0.5s ease 0s;
-      border-radius: 12rem;
-      color: brown !important;
-      z-index: 1000; } }
+  .servicios-inicio .navbar-transparente {
+    background-color: transparent !important; }
+  .servicios-inicio .nav-item:hover {
+    background-color: #00685b;
+    transition: background-color 0.5s ease 0s;
+    border-radius: 12rem;
+    z-index: 1000; }
+    .servicios-inicio .nav-item:hover a {
+      color: white !important; } }
 /*=========== BIENVENIDOS =========== */
-#bienvenidos div p {
-  letter-spacing: 0.08rem; }
+#bienvenidos {
+  background-color: #00685b; }
+  #bienvenidos div p {
+    letter-spacing: 0.08rem; }
 
 /*=========== FOTO 1 =========== */
 .foto-1 {
@@ -6814,79 +6805,6 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover; } }
-
-/*=========== FOTO SERVICIO 1 =========== */
-.foto-servicios-1 {
-  min-height: 50vh;
-  background: url(../images/servicios/servicios1-sd.jpg) center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
-
-@media (min-width: 768px) {
-  .foto-servicios-1 {
-    min-height: 60vh;
-    background: url(../images/servicios/servicios1-desktop.jpg) center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; } }
-
-/*=========== FOTO SERVICIO 2 =========== */
-.foto-servicios-2 {
-  min-height: 50vh;
-  background: url(../images/servicios/servicios2-sd.jpg) center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
-
-@media (min-width: 768px) {
-  .foto-servicios-2 {
-    min-height: 60vh;
-    background: url(../images/servicios/servicios2-desktop.jpg) center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; } }
-
-/*=========== FOTO SERVICIO 3 =========== */
-.foto-servicios-3 {
-  min-height: 50vh;
-  background: url(../images/servicios/servicios3-sd.jpg) center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
-
-@media (min-width: 768px) {
-  .foto-servicios-3 {
-    min-height: 60vh;
-    background: url(../images/servicios/servicios3-desktop.jpg) center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; } }
-
-/*=========== FOTO SERVICIO 4 =========== */
-.foto-servicios-4 {
-  min-height: 50vh;
-  background: url(../images/servicios/servicios4-sd.jpg) center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
-
-@media (min-width: 768px) {
-  .foto-servicios-4 {
-    min-height: 60vh;
-    background: url(../images/servicios/servicios4-desktop.jpg) center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; } }
-
 /*=========== SERVICIOS =========== */
 .item {
   height: 7rem;
@@ -6907,33 +6825,9 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 .btn-servicios:hover {
   cursor: pointer; }
 
-.servicios-inicio {
-  color: #00685b; }
-
-.servicios-inicio .nav-item:hover {
-  background-color: #00685b;
-  transition: background-color 0.5s ease 0s;
-  border-radius: 12rem;
-  color: brown !important;
-  z-index: 1000; }
-
 @media (min-width: 768px) {
   .y-mas {
     display: none; } }
-
-/*=========== CABANAS =========== */
-
-
-.cabanas-inicio {
-  color: #00685b; }
-
-.cabanas-inicio .nav-item:hover {
-  background-color: #00685b;
-  transition: background-color 0.5s ease 0s;
-  border-radius: 12rem;
-  color: brown !important;
-  z-index: 1000; }
-
 /*=========== FOOTER =========== */
 .footer-social-media a {
   color: inherit; }
@@ -6968,13 +6862,4 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
       border-left: 1px #333 solid; } }
 /*=========== FONT SIZE =========== */
 
-.hr-corto {
-  border-color: #00685b;
-  border-width: 3px;
-  max-width: 50px;
-}
-
-.bg-verde {
-  background-color: #00685b !important; }
-
-/*# sourceMappingURL=estilos.css.map */
+/*# sourceMappingURL=servicios.css.map */
