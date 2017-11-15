@@ -6647,7 +6647,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   background-color: #FFD46B; }
 
 .bg-secundario {
-  background-color: #502E1D; }
+  background-color: #00685b /*#502E1D*/ ; }
 
 .bg-terciario {
   background-color: #FFD46B; }
@@ -6776,7 +6776,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   color: #212121; }
 .caracteristicas div ul li a.active {
   color: #FEFFE6 !important;
-  background-color: #502E1D !important;
+  background-color: #00685b /*#502E1D*/ !important;
   border: none; }
 .caracteristicas div div {
   border: none !important; }
@@ -6793,7 +6793,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 
   .caracteristicas-desktop {
     display: block;
-    font-size: 0.6rem !important; }
+    font-size: 0.9rem !important; }
 
   .card-block {
     min-height: 20vh; } }
@@ -6896,9 +6896,9 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 .item-hijo {
   flex: 1 0 0px;
   vertical-align: middle;
-  color: #502E1D; }
+  color: /*#00685b*/ rgb(92, 47, 27); }
   .item-hijo .fa-circle {
-    color: #502E1D; }
+    color: /*#00685b*/ rgb(92, 47, 27); }
 
 .btn-servicios {
   border-radius: 0.3rem;
