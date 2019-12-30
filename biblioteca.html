@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- SASS main file - Incluye Bootstrap 4 -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- Font Krona+One -->
+    <link href="https://fonts.googleapis.com/css?family=Krona+One" rel="stylesheet">
+	  
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+
+  </head>
+  <body class="top-fixed">
+    
+	<!-- Inicio -->
+    <section class="servicios-inicio">
+        <div class="h-25 container">
+            <div>
+                <!-- Navbar -->
+                <nav id="barra-menu-cabanas" class="navbar navbar-toggleable-sm bg-inverse navbar-inverse fixed-top">
+                    <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="index.html">Namasté</a>
+
+                    <div class="navbar-collapse collapse" id="menu" aria-expanded="false">
+                        <ul class="navbar-nav ml-auto mr-md-2">
+                            <li class="nav-item px-md-2">
+                                <a class="nav-link" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item px-md-2">
+                                <a data-scroll href="servicios.html" class="nav-link" >Servicios</a>
+                            </li>
+                            <li class="nav-item px-md-2">
+                                <a class="nav-link" href="cabanas.html">Cabañas</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <span class="ir-arriba rounded bg-inverse text-info"><i class="p-2 fa fa-chevron-up" aria-hidden="true"></i></span>
+
+    <!-- Cabecera -->
+    <div class="text-center servicios-inicio mt-5">
+        <br>
+        <h1 class="container">Biblioteca</h1>
+        <hr class="hr-corto">
+    </div>
+
+    <!-- Servicios -->
+    <section class="my-5">
+        <div class="container">
+            <p>Listado de libros que componen la biblioteca del complejo.</p>
+            <ul id="listado" class="list-unstyled"></ul>
+            <p>Biblioteca para los <strong>niños</strong>:</p>
+            <ul id="listado-chicos" class="list-unstyled"></ul>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-inverse pt-4 pb-1 p-md-1 text-muted">
+        <div class="container">
+            <div class="row align-items-strecht">
+                <div id="footer-brand" class="col-12 col-md-4 px-1 mb-2 p-md-0 m-md-auto text-center"><h4>NAMASTÉ - <strong>SAN PEDRO</strong></h4></div>
+
+                <div class="col-5 col-md-4 d-flex justify-content-stretch align-items-center borde-derecho px-1">
+                    <div class="footer-social-media w-100 d-flex justify-content-center">
+                        <div class="px-2 mx-2">
+                            <a href="https://www.facebook.com/NamasteSanPedro/"><i id="facebook" class="fa fa-facebook fa-3x social-media-icono"></i></a>
+                        </div>
+                        <div class="px-2 mx-2">
+                            <a href="https://www.instagram.com/namastesanpedro/"><i id="instagram" class="fa fa-instagram fa-3x social-media-icono"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-7 col-md-4">
+                    <address class="contacto my-0 pt-2">
+                        <strong>Complejo Namasté</strong><br>
+                        Lucio Mansilla 7105 - San Pedro (2930)<br>
+                        Buenos Aires, Argentina<br>
+                        <strong>Contacto:</strong>
+                        <ul class="fa-ul">
+                            <li><i class="fa-li fa fa-whatsapp"></i>(011) 15-3480-1960</li>
+                            <li><i class="fa-li fa fa-facebook"></i>@NamasteSanPedro</li>
+                            <li><i class="fa-li fa fa-envelope"></i>namastecomplejo@gmail.com</li>
+                        </ul>
+                    </address>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    
+    <script src="js/smooth-scroll.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="bower_components/tether/dist/js/tether.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var libros = [
+                {autor: "Osvaldo Soriano", titulo: "No habrá más penas ni olvido"},
+                {autor: "Ransom Riggs", titulo: "El hogar de Miss Peregrine para niños peculiares"},
+                {autor: "Chris Priestley", titulo: "Lo más cruel del invierno"},
+                {autor: "Carlos Megliay Carlos Trillo", titulo: "Cybersix"},
+                {autor: "Fabián Sevilla", titulo: "Ultracalavera. Sinietro viaje de estudios"},
+                {autor: "Graciela Montes", titulo: "Tengo un monstruo en el bolsillo"},
+                {autor: "Robert Louis Stevenson", titulo: "La isla del tesoro"},
+                {autor: "Charles Phillips", titulo: "Mente activa. 100 ejercicios para mantener la mente en actividad"},
+                {autor: "Ana María Shua", titulo: "Vidas perpendiculares"},
+                {autor: "Adela Basch", titulo: "Abran cancha que aquí viene Don Quijote de la Mancha"},
+                {autor: "Art Spiegelman", titulo: "Maus. Historia de un sobreviviente"}
+            ];
+            var librosChicos = [
+                {autor: "María Elena Walsh", titulo: "El Reino del Revés"},
+                {autor: "José Murillo", titulo: "Mi amigo el pespir"},
+                {autor: "Fabián Sevilla", titulo: "Príncipe Azul en tres sencillas lecciones"},
+                {autor: "Delía, María", titulo: "Pasado por agua"},
+                {autor: "Santillana (Ed.)", titulo: "Cuentos con sorpresas y malentendidos"},
+                {autor: "Gerónimo Stilton", titulo: "El extraño caso del calamar gigante"},
+                {autor: "Maite Figuerola y Mercedes Figuerola", titulo: "Las estaciones del año"},
+                {autor: "Margarita Mainé", titulo: "Quiero ser Pérez"},
+                {autor: "Teresa Novoa", titulo: "¿Cómo es el cocodrilo?"},
+                {autor: "Graciela Montes", titulo: "Federico va a la escuela"}
+            ];
+            var listado = $('#listado');
+            var listadoChicos = $('#listado-chicos');
+            
+            libros.forEach( libro => {
+                listado.append(`<li>${libro.autor}. <em>${libro.titulo}</em></li>`)
+            })
+
+            librosChicos.forEach( libro => {
+                listadoChicos.append(`<li>${libro.autor}. <em>${libro.titulo}</em></li>`)
+            })
+            
+            .magnificPopup({
+            type: 'image',
+            closeOnContentClick: true,
+            image: {
+                verticalFit: false
+            }
+            });
+        });
+        </script>
+  </body>
+</html>
