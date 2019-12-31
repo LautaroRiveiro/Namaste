@@ -9023,6 +9023,10 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   -webkit-text-fill-color: transparent;
 }
 
+#whatsapp:hover, #whatsapp:active {
+  color: #25d366;
+}
+
 .contacto {
   font-size: 0.7rem;
 }
