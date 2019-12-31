@@ -7,14 +7,14 @@ $(document).ready(function() {
         if (window.matchMedia("(min-width: 768px)").matches) {  /* the viewport is at least 768 pixels wide (md) */
             var barra = $(window).scrollTop();
             var posicion = barra * 0.10;
-            $('.inicio').css({
+            $('.inicio-index').css({
                 'background-position': '0 -' + posicion + 'px'
             });
         }
 
         //--- Transparencia del navbar y flecha arriba ---//
         if ($(this).scrollTop() > 20){
-            $('#barra-menu').removeClass('navbar-transparente');
+            $('#barra-menu-index').removeClass('navbar-transparente');
 
             if ($(this).scrollBottom() > 30){
                 $('.ir-arriba').slideDown();
@@ -24,7 +24,7 @@ $(document).ready(function() {
             }
         }
         else{
-            $('#barra-menu').addClass('navbar-transparente');
+            $('#barra-menu-index').addClass('navbar-transparente');
             $('.ir-arriba').slideUp();
         }
 
