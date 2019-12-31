@@ -8971,14 +8971,15 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 }
 
 /*=========== HEADER ===========*/
-.navbar-toggler-icon {
-  color: #00685b !important;
-  background-color: #00685b !important;
-  border-radius: 8px;
+.navbar-toggler:hover {
+  cursor: pointer;
 }
 
 .navbar-brand {
   font-family: 'Krona One', sans-serif !important;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .navbar-collapse {
@@ -9047,7 +9048,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   footer {
     padding: 0px;
   }
-  footer #facebook, footer #instagram {
+  footer #facebook, footer #instagram, footer #whatsapp {
     font-size: 2rem;
   }
   footer #footer-brand h4 {
