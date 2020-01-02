@@ -9338,4 +9338,11 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
     background-size: cover;
   }
 }
+
+/*============================================================*/
+/*==================== PÁGINA BIBLIOTECA =====================*/
+/*============================================================*/
+#listado, #listado-chicos {
+  line-height: 1.5rem;
+}
 /*# sourceMappingURL=estilos.css.map */

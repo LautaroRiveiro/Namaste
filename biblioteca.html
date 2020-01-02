@@ -68,10 +68,11 @@
     <!-- Servicios -->
     <section class="my-5">
         <div class="container">
-            <p>Listado de libros que componen la biblioteca del complejo.</p>
+            <p>Listado de libros que componen la biblioteca del complejo:</p>
             <ul id="listado" class="list-unstyled"></ul>
             <p>Biblioteca para los <strong>niños</strong>:</p>
             <ul id="listado-chicos" class="list-unstyled"></ul>
+            <p>También hay crucigramas y libros para colorear.</p>
         </div>
     </section>
     
@@ -131,8 +132,39 @@
                 {autor: "Charles Phillips", titulo: "Mente activa. 100 ejercicios para mantener la mente en actividad"},
                 {autor: "Ana María Shua", titulo: "Vidas perpendiculares"},
                 {autor: "Adela Basch", titulo: "Abran cancha que aquí viene Don Quijote de la Mancha"},
-                {autor: "Art Spiegelman", titulo: "Maus. Historia de un sobreviviente"}
-            ];
+                {autor: "Art Spiegelman", titulo: "Maus. Historia de un sobreviviente"},
+                {autor: "Ana María Shua", titulo: "Cuentos con magia"},
+                {autor: "Adolfo Bioy Casares", titulo: "Diario de la guerra del cerdo"},
+                {autor: "Héctor Oesterheld y Alberto Breccia", titulo: "Sherlock Time"},
+                {autor: "Agatha Christie", titulo: "Poirot investiga"},
+                {autor: "Agatha Christie", titulo: "Asesinato en el campo de golf"},
+                {autor: "Agatha Christie", titulo: "Primeros casos de Poirot"},
+                {autor: "Agatha Christie", titulo: "Asesinato en el Orient Express"},
+                {autor: "Agatha Christie", titulo: "La hora de Agatha Christie"},
+                {autor: "Jorge Luis Borges", titulo: "Ficciones"},
+                {autor: "Alejandro Dolina", titulo: "Crónicas del Ángel Gris"},
+                {autor: "Gabriel Russo", titulo: "Memorias de un choripán"},
+                {autor: "Pablo Neruda", titulo: "Veinte poemas de amor y una canción desesperada"},
+                {autor: "Dennis Bock", titulo: "El jardín de las cenizas"},
+                {autor: "Ángeles Mastretta", titulo: "Mujeres de ojos grandes"},
+                {autor: "Ana Arias", titulo: "Cuentos de la memoria"},
+                {autor: "Horacio López", titulo: "La carta y otros cuentos y leyenas populares de terror"},
+                {autor: "Santillana (ed.)", titulo: "Galería de seres espantosos"},
+                {autor: "Matthew Pearl", titulo: "El Club Dante"},
+                {autor: "Edgar Allan Poe", titulo: "Cuentos de horror y misterio"},
+                {autor: "Antonio Santa Ana", titulo: "Los ojos del perro siberiano"},
+                {autor: "Mario Benedetti", titulo: "El mundo que respiro"},
+                {autor: "Sebastián Letemendía", titulo: "Cita en la cumbre"},
+                {autor: "Eduardo Anguita y Martín Caparrós", titulo: "La voluntad 3. Una historia de la militancia revolucionaria en la Argentina."},
+                {autor: "Juan Federico Von Zeschau", titulo: "Fuego Amigo"},
+                {autor: "Horacio Quiroga", titulo: "Cuentos de amor de locura y de muerte"},
+                {autor: "Gabriel García Márquez", titulo: "Del amor y otros demonios"},
+                {autor: "Albert Camus y Arthur Koestler", titulo: "La pena de muerte"},
+                {autor: "Hermann Hesse", titulo: "Narciso y Goldmundo"},
+                {autor: "Gao Xingjian", titulo: "La montaña del Alma"},
+                {autor: "Selección de María Serrano", titulo: "Caminos de la fábula. Antología."},
+                {autor: "Rudy", titulo: "La pesada gerencia"}
+            ].sort((a, b)=> a.autor - b.autor);
             var librosChicos = [
                 {autor: "María Elena Walsh", titulo: "El Reino del Revés"},
                 {autor: "José Murillo", titulo: "Mi amigo el pespir"},
@@ -143,8 +175,17 @@
                 {autor: "Maite Figuerola y Mercedes Figuerola", titulo: "Las estaciones del año"},
                 {autor: "Margarita Mainé", titulo: "Quiero ser Pérez"},
                 {autor: "Teresa Novoa", titulo: "¿Cómo es el cocodrilo?"},
-                {autor: "Graciela Montes", titulo: "Federico va a la escuela"}
+                {autor: "Graciela Montes", titulo: "Federico va a la escuela"},
+                {autor: "María Eugenia Delía", titulo: "Tómalo con pinzas"},
+                {autor: "Silvia Schujer", titulo: "El tren más largo del mundo"},
+                {autor: "María Elena Walsh", titulo: "Zoo Loco"}
             ];
+
+            libros.sort((a,b) => (a.titulo > b.titulo) ? 1 : ((b.titulo > a.titulo) ? -1 : 0));
+            libros.sort((a,b) => (a.autor > b.autor) ? 1 : ((b.autor > a.autor) ? -1 : 0));
+            librosChicos.sort((a,b) => (a.titulo > b.titulo) ? 1 : ((b.titulo > a.titulo) ? -1 : 0));
+            librosChicos.sort((a,b) => (a.autor > b.autor) ? 1 : ((b.autor > a.autor) ? -1 : 0));
+
             var listado = $('#listado');
             var listadoChicos = $('#listado-chicos');
             
