@@ -11,6 +11,11 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <!-- Font Krona+One -->
     <link href="https://fonts.googleapis.com/css?family=Krona+One" rel="stylesheet">
+    <!-- Animate AOS -->
+    <link rel="stylesheet" href="css/aos.css">
+    <script src="js/aos.js"></script>
+    <!-- AnimateCSS -->
+    <link rel="stylesheet" href="css/animate.css">
     
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
 
@@ -55,8 +60,8 @@
                 </div>
 
             	<div class="text-center texto-inicio">
-    	    		<h1 class="pt-3 mt-5 texto-inicio-namaste h1">Namasté</h1>
-    	    		<p class="h5">PLACER. <strong>CONFORT.</strong> RELAX</p>
+    	    		<h1 class="pt-3 mt-5 texto-inicio-namaste h1" data-aos="zoom-in" data-aos-duration="3000">Namasté</h1>
+    	    		<p class="h5" data-aos="zoom-in" data-aos-duration="3000">PLACER. <strong>CONFORT.</strong> RELAX</p>
             	</div>
 
                 <a class="pb-3 flecha-bajar" data-scroll href="#bienvenidos"><br><i class="fa fa-chevron-down fa-2x texto-inicio" aria-hidden="true"></i></a>
@@ -67,7 +72,7 @@
 
 	<!-- Bienvenidos -->
     <section id="bienvenidos" class="jumbotron jumbotron-fluid mb-0 bg-faded">
-    	<div class="container py-5">
+    	<div class="container py-5" data-aos="fade-up">
             <h2 class="h2 text-center">✽ <strong>BIENVENIDOS</strong> ✽</h2>
             <p class="px-2 pt-4 text-center">Ubicado en la histórica, tradicional y bonita ciudad de San Pedro, <i>Namasté</i> ofrece 4 cabañas con capacidad para 2 a 6 personas, completamente equipadas con todo lo que nuestras visitas necesitan para su descanso.</p>
     	</div>
@@ -79,7 +84,7 @@
 
     <!-- Características -->
     <section class="caracteristicas bg-faded">
-        <div class="container py-4">
+        <div class="container py-4" data-aos="fade-up">
             <!-- Nav tabs -->
             <ul class="nav nav-tabs nav-justified" role="tablist">
                 <li class="nav-item">
@@ -139,7 +144,7 @@
     <section class="caracteristicas-desktop bg-faded">
         <div class="container py-5">
             <!-- card-deck -->
-            <div class="card-deck color-terciario">
+            <div class="card-deck color-terciario" data-aos="fade-up">
                 <div class="card bg-secundario mx-0">
                     <img class="card-img-top img-fluid p-1" src="images/features1-sd.jpg" alt="Imagen">
                     <div class="card-block">
@@ -340,6 +345,11 @@
     <script src="js/script.js"></script>
     <script src="bower_components/tether/dist/js/tether.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-
+    <script>
+        AOS.init({
+            once: true,
+            duration: 900
+        });
+    </script>
   </body>
 </html>

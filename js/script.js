@@ -64,6 +64,14 @@ $(document).ready(function() {
         }, 500);
     });
 
+    //--- Configuracion de los servicios del Home
+    $('.item').mouseenter(function(event) {
+        event.currentTarget.classList.add('animated', 'pulse')
+        event.currentTarget.addEventListener('animationend', function() { 
+            event.currentTarget.classList.remove('animated', 'pulse')
+         })
+    });
+
 });
 
 //--- Creacion de funcion inversa a scrollTop
