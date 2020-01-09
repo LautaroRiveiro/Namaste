@@ -19,6 +19,12 @@
     
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
 
+    <script type="module" src="components/footer.js"></script>
+    <script type="module">
+        import MyComponent from 'components/footer.js';
+        customElements.define('my-component', MyComponent);
+    </script>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155171497-1"></script>
     <script>
@@ -69,6 +75,8 @@
     </section>
 
     <span class="ir-arriba rounded bg-inverse text-info"><i class="p-2 fa fa-chevron-up" aria-hidden="true"></i></span>
+
+    <div id="like_button_container"></div>
 
 	<!-- Bienvenidos -->
     <section id="bienvenidos" class="jumbotron jumbotron-fluid mb-0 bg-faded">
@@ -351,5 +359,11 @@
             duration: 900
         });
     </script>
+
+<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+<!-- Load our React component. -->
+<script src="like_button.js"></script>
   </body>
 </html>
